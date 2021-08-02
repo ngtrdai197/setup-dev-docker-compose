@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  # database image
+  database:
+    container_name: postgresql_setup
+    image: "postgres:latest" # use latest official postgres version
+    env_file:
+      - database.env # configure postgres
+    ports:
+      - 5432:5432
+    restart: unless-stopped
+    volumes:
+      - ./database:/var/lib/postgresql/data/ # persist data even if container shuts down
+
+volumes:
+  database: # named volumes can be managed easier using docker-compose

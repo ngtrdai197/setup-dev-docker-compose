@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  mongodb:
+    image: "mongo"
+    container_name: mongodb_setup
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=dev
+      - MONGO_INITDB_ROOT_PASSWORD=dev
+      - MONGO_INITDB_DATABASE=demo-setup-mongodb
+    volumes:
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./database:/data/db
+    restart: unless-stopped
+    ports:
+      - 27017:27017
+volumes:
+    database:
