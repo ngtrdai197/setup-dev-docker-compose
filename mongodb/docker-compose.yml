@@ -3,10 +3,8 @@ services:
   mongodb:
     image: "mongo"
     container_name: mongodb_setup
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=dev
-      - MONGO_INITDB_ROOT_PASSWORD=dev
-      - MONGO_INITDB_DATABASE=demo-setup-mongodb
+    env_file:
+      - database.env # configure mongodb
     volumes:
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
       - ./database:/data/db
