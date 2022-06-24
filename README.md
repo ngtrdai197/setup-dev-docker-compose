@@ -11,8 +11,8 @@ For instance:
 $ cd mysql
 ```
 <hr />
-And now, we use `Make` to start 🚀
-<br>
+<p>And now, we use `Make` to start 🚀 </p>
+
 ```bash
 # Wake up container
 $ make up
