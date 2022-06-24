@@ -4,7 +4,7 @@ Template for build database image with docker-compose for dev purpose :rocket:
 ### How to start ?
 
 ```bash
-# Run without detach mode
+# Wake up container
 $ make up
 
 # Run and build without detach mode
