@@ -2,7 +2,7 @@ version: "3.7"
 services:
   # database image
   database:
-    container_name: postgresql_setup
+    container_name: postgresql_local
     image: "postgres:latest" # use latest official postgres version
     env_file:
       - database.env # configure postgres
