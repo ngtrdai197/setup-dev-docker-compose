@@ -10,8 +10,8 @@ For instance:
 # For example we need to uses mysql db
 $ cd mysql
 ```
-<hr />
-<p>And now, we use `Make` to start 🚀 </p>
+---
+And now, we use `Make` to start 🚀
 
 ```bash
 # Wake up container
