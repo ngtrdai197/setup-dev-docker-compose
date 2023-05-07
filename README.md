@@ -1,4 +1,5 @@
 # dbs-docker-compose
+
 Template for build database image with docker-compose for dev purpose :rocket:
 
 ### How to start ?
@@ -6,27 +7,21 @@ Template for build database image with docker-compose for dev purpose :rocket:
 Move into kind db need to use
 
 For instance:
+
 ```bash
 # For example we need to uses mysql db
 $ cd mysql
 ```
+
 ---
+
 And now, we use `Make` to start 🚀
 
 ```bash
 # Wake up container
 $ make up
 
-# Run and build without detach mode
-$ make build
-
-# Run and build with detach mode
-$ make upd
-
-# Down container and persist volume
+# Down container
 $ make down
-
-# Down container and remove persist volume
-$ make downvl
 
 ```

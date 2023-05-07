@@ -1,9 +1,9 @@
 .PHONY: up down
 
 up:
-	@echo "Up mysql db ... "
+	@echo "Up mongodb db ... "
 	docker-compose up --build -d
 
 down:
-	@echo "Downing mysql db ..."
+	@echo "Downing mongodb db ..."
 	docker-compose down
