@@ -1,10 +1,10 @@
-# dbs-docker-compose
+# Setup dev docker compose
 
-Template for build database image with docker-compose for dev purpose :rocket:
+Set up working tools like: database, kafka,... for development with docker-compose 🎉
 
 ### How to start ?
 
-Move into kind db need to use
+Move into kind tool need to use
 
 For instance:
 
@@ -12,16 +12,14 @@ For instance:
 # For example we need to uses mysql db
 $ cd mysql
 ```
-
 ---
-
 And now, we use `Make` to start 🚀
-
 ```bash
 # Wake up container
 $ make up
+```
 
+```bash
 # Down container
 $ make down
-
 ```
